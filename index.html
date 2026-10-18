@@ -1,85 +1,139 @@
 <!doctype html>
-<html lang="en-GB">
+<html lang="en-GB" class="no-js">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ethan Davies · Data &amp; automation developer</title>
   <meta name="description" content="Ethan Davies, data and automation developer in Stourbridge, UK. BigQuery, Apps Script, VBA, Power BI, Python and Gemini.">
-  <meta name="color-scheme" content="light dark">
-  <meta name="theme-color" content="#0F5E5C">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#0C1719">
+  <script>
+    (function () {
+      var d = document.documentElement, t = 'dark';
+      try { t = localStorage.getItem('theme') === 'light' ? 'light' : 'dark'; } catch (e) {}
+      d.setAttribute('data-theme', t);
+      d.className = d.className.replace('no-js', 'js');
+    })();
+  </script>
+  <link rel="canonical" href="https://ragzad.github.io/">
   <meta property="og:title" content="Ethan Davies · Data &amp; automation developer">
-  <meta property="og:description" content="I find slow manual processes, build the automation and get teams using it.">
+  <meta property="og:description" content="I automate the reporting and admin work that slows teams down.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://ragzad.github.io/">
-  <meta property="og:image" content="https://ragzad.github.io/assets/docassist.jpg">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230F5E5C'/%3E%3Ctext x='6' y='22' font-family='Georgia,serif' font-size='16' font-weight='700' fill='%23F6F2EA'%3EED%3C/text%3E%3Ccircle cx='26' cy='7' r='3' fill='%23A8471E'/%3E%3C/svg%3E">
+  <meta property="og:site_name" content="Ethan Davies">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:image" content="https://ragzad.github.io/assets/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Ethan Davies, data and automation developer. I automate the reporting and admin work that slows teams down.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Manrope:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,400..500&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;700&display=swap">
+  <link rel="preload" as="image" href="assets/hero-answer.webp" type="image/webp">
   <link rel="stylesheet" href="assets/site.css">
+  <script src="assets/site.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
-  <header class="top">
+  <header class="top" id="top-bar">
     <div class="wrap top-inner">
-      <a class="brand" href="#top" aria-label="Ethan Davies, home">
+      <a class="brand" href="#top" aria-label="Ethan Davies, back to top">
         <span class="mark" aria-hidden="true">ED</span>
         <span class="brand-name">Ethan Davies</span>
       </a>
+      <div class="top-right">
       <nav aria-label="Sections">
         <ul>
-          <li><a href="#results">Results</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#results"><span class="n" aria-hidden="true">01</span>Results</a></li>
+          <li><a href="#projects"><span class="n" aria-hidden="true">02</span>Projects</a></li>
+          <li><a href="#skills"><span class="n" aria-hidden="true">03</span>Skills</a></li>
+          <li><a href="#contact"><span class="n" aria-hidden="true">04</span>Contact</a></li>
         </ul>
       </nav>
+      <button class="theme-toggle" type="button" aria-label="Light mode" aria-pressed="false" title="Switch to light mode">
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg>
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 14.6A8.2 8.2 0 0 1 9.4 4a8.2 8.2 0 1 0 10.6 10.6z"/></svg>
+      </button>
+      </div>
     </div>
   </header>
 
   <main id="main">
-    <section class="hero wrap" id="top" aria-labelledby="hero-title">
-      <div class="hero-main">
-      <p class="eyebrow">Data &amp; automation developer · Stourbridge, UK</p>
-      <h1 id="hero-title">I find the slow manual jobs, automate them and get the team using the fix.</h1>
-      <p class="lead">
-        I'm Ethan. For the last few years I've worked between operations, finance and IT, spotting the
-        processes that eat hours every week and replacing them with something that runs on its own.
-        I write the solution myself in BigQuery, Apps Script, VBA, React or Python, then do the part that
-        usually gets skipped: <mark>getting the people who have to live with it to actually use it.</mark>
-      </p>
-      <p class="hero-links">
-        <a class="btn" href="mailto:Edavies9000@gmail.com">Email me</a>
-        <a class="link-arrow" href="https://github.com/ragzad">GitHub: ragzad</a>
-        <!-- CV download: add when ready
-        <a class="link-arrow" href="assets/Ethan-Davies-CV.pdf">Download my CV (PDF)</a>
-        -->
-      </p>
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-main">
+          <p class="eyebrow">Data &amp; automation developer · Stourbridge, UK</p>
+          <h1 id="hero-title">I automate the reporting and admin work that slows teams down.</h1>
+          <p class="lead">
+            I'm Ethan. For the last few years I've worked between operations, finance and IT, spotting the
+            processes that eat hours every week and replacing them with something that runs on its own.
+            I write the solution myself in BigQuery, Apps Script, VBA, React or Python, then do the part that
+            usually gets skipped: <mark>getting the people who have to live with it to actually use it.</mark>
+          </p>
+          <p class="hero-links">
+            <a class="btn" href="mailto:Edavies9000@gmail.com">Email me</a>
+            <a class="link-arrow" href="https://github.com/ragzad">GitHub: ragzad</a>
+            <!-- CV download: add when ready
+            <a class="link-arrow" href="assets/Ethan-Davies-CV.pdf">Download my CV (PDF)</a>
+            -->
+          </p>
+        </div>
+
+        <figure class="plate" aria-labelledby="fig1">
+          <div class="plate-stack">
+            <a class="plate-back" href="https://github.com/ragzad/DocAssist" tabindex="-1" aria-hidden="true">
+              <picture>
+                <source srcset="assets/hero-answer.webp" type="image/webp">
+                <img src="assets/hero-answer.jpg" width="1000" height="668" fetchpriority="high" decoding="async" alt="">
+              </picture>
+            </a>
+            <div class="plate-front">
+              <picture>
+                <source srcset="assets/hero-source.webp" type="image/webp">
+                <img src="assets/hero-source.jpg" width="760" height="585" decoding="async"
+                     alt="The cited passage opened in the source document, section 6 on page 2, with the matching sentences highlighted">
+              </picture>
+            </div>
+          </div>
+          <figcaption id="fig1"><span class="fig-n">Fig. 1</span> DocAssist answering a question from a company policy PDF, then opening the exact passage it cited.</figcaption>
+        </figure>
+      </div>
+
+      <div class="wrap">
+        <p class="dateline" aria-label="Tools I use most">
+          <span>BigQuery</span><span class="sep" aria-hidden="true">/</span><span>Apps Script</span><span class="sep" aria-hidden="true">/</span><span>VBA</span><span class="sep" aria-hidden="true">/</span><span>Power BI</span><span class="sep" aria-hidden="true">/</span><span>Python</span><span class="sep" aria-hidden="true">/</span><span>React</span><span class="sep" aria-hidden="true">/</span><span>Gemini</span>
+        </p>
       </div>
     </section>
 
     <section class="results" id="results" aria-labelledby="results-title">
       <div class="wrap">
-        <h2 id="results-title">Results at work</h2>
+        <header class="sec-head on-band">
+          <span class="sec-num" aria-hidden="true">01</span>
+          <h2 id="results-title">Results at work</h2>
+        </header>
         <ul class="stats">
           <li>
-            <p class="num">220<span> hrs/month</span></p>
+            <p class="num"><span class="fig" data-count="220">220</span><span class="unit">hrs/month</span></p>
             <p>saved on area reviews for a team of five, with a BigQuery ETL pipeline and Apps Script transformations.</p>
             <p class="where">Rentokil Initial</p>
           </li>
           <li>
-            <p class="num">~230<span> hrs/month</span></p>
+            <p class="num"><span class="fig" data-count="230" data-prefix="~">~230</span><span class="unit">hrs/month</span></p>
             <p>saved by automating intake of police reports and court documents in VBA, replacing a 3.5 hour morning task for three staff.</p>
             <p class="where">Dudley Council</p>
           </li>
           <li>
-            <p class="num">70%</p>
+            <p class="num"><span class="fig" data-count="70" data-suffix="%">70%</span></p>
             <p>efficiency gain for a field sales team, from a React mapping app using Land Registry and EPC APIs to find and route customers.</p>
             <p class="where">National Eco</p>
           </li>
           <li>
-            <p class="num">2&times;</p>
+            <p class="num"><span class="fig">2&times;</span></p>
             <p>company revenue within 12 months, growing the technician team from 7 to 10 and winning new contracts.</p>
             <p class="where">Network IT</p>
           </li>
@@ -87,97 +141,190 @@
       </div>
     </section>
 
-    <section class="wrap section" id="projects" aria-labelledby="projects-title">
-      <h2 id="projects-title">Projects</h2>
-      <p class="section-intro">Things I've built outside work. The code is all on GitHub.</p>
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="wrap">
+        <header class="sec-head">
+          <span class="sec-num" aria-hidden="true">02</span>
+          <h2 id="projects-title">Projects</h2>
+          <p class="sec-note">Things I've built outside work. The code is all on GitHub.</p>
+        </header>
 
-      <article class="card feature">
-        <a class="shot" href="https://github.com/ragzad/DocAssist" tabindex="-1" aria-hidden="true">
-          <picture>
-            <source srcset="assets/docassist.webp" type="image/webp">
-            <img src="assets/docassist.jpg" width="1200" height="800" loading="lazy" decoding="async"
-                 alt="DocAssist answering a question about company policy, with numbered citations and the referenced passages underneath">
-          </picture>
-        </a>
-        <div class="feature-body">
-          <p class="tag-line">Main project</p>
-          <h3><a href="https://github.com/ragzad/DocAssist">DocAssist</a></h3>
-          <p>
-            Chat with your company documents. You ask something like "how much holiday can I carry over?" and
-            get a short answer with the document, section and page it came from. If the answer isn't in the
-            documents, it says so instead of guessing.
-          </p>
-          <p>
-            It combines keyword and vector search, uses Gemini with tools to search, read a whole document or
-            draft an email, and is checked against a set of test questions. It can also redact personal data on
-            upload and keeps no chat history.
-          </p>
-          <ul class="tags" aria-label="Built with">
-            <li>Python</li><li>FastAPI</li><li>Gemini</li><li>RAG</li><li>pytest</li><li>Playwright</li>
-          </ul>
-          <a class="link-arrow" href="https://github.com/ragzad/DocAssist">View on GitHub</a>
+        <article class="feature">
+          <a class="feature-shot" href="https://github.com/ragzad/DocAssist" tabindex="-1" aria-hidden="true">
+            <picture>
+              <source srcset="assets/docassist.webp" type="image/webp">
+              <img src="assets/docassist.jpg" width="1200" height="800" loading="lazy" decoding="async"
+                   alt="DocAssist answering a question about company policy, with numbered citations and the referenced passages underneath">
+            </picture>
+          </a>
+          <div class="feature-body">
+            <p class="kicker">Main project</p>
+            <h3><a href="https://github.com/ragzad/DocAssist">DocAssist</a></h3>
+            <p class="feature-lead">
+              Chat with your company documents. You ask something like &ldquo;how much holiday can I carry over?&rdquo; and
+              get a short answer with the document, section and page it came from. If the answer isn't in the
+              documents, it says so instead of guessing.
+            </p>
+            <p>
+              It combines keyword and vector search, uses Gemini with tools to search, read a whole document or
+              draft an email, and is checked against a set of test questions. It can also redact personal data on
+              upload and keeps no chat history.
+            </p>
+            <ul class="tags" aria-label="Built with">
+              <li>Python</li><li>FastAPI</li><li>Gemini</li><li>RAG</li><li>pytest</li><li>Playwright</li>
+            </ul>
+            <a class="link-arrow" href="https://github.com/ragzad/DocAssist">View on GitHub</a>
+          </div>
+        </article>
+
+        <div class="grid">
+          <article class="card">
+            <div class="thumb" aria-hidden="true">
+              <svg viewBox="0 0 400 190" role="presentation" focusable="false">
+                <defs><marker id="ah1" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" class="ahead"/></marker></defs>
+                <g class="edges" marker-end="url(#ah1)">
+                  <path d="M58 52H74"/><path d="M146 52H160"/><path d="M226 52H240"/><path d="M306 52H320"/>
+                  <path d="M104 66V100"/><path d="M118 100V68"/>
+                </g>
+                <g class="dash"><path d="M111 130V160M193 66V160M273 66V160M353 66V160" /></g>
+                <rect class="node ghost" x="6" y="38" width="52" height="28" rx="6"/><text class="lbl sm" x="32" y="56">Player</text>
+                <rect class="node key" x="76" y="38" width="70" height="28" rx="6"/><text class="lbl on" x="111" y="56">Archivist</text>
+                <rect class="node" x="162" y="38" width="64" height="28" rx="6"/><text class="lbl" x="194" y="56">Director</text>
+                <rect class="node" x="242" y="38" width="64" height="28" rx="6"/><text class="lbl" x="274" y="56">Narrator</text>
+                <rect class="node" x="322" y="38" width="64" height="28" rx="6"/><text class="lbl" x="354" y="56">Scribe</text>
+                <rect class="node" x="76" y="102" width="70" height="28" rx="6"/><text class="lbl" x="111" y="120">Creator</text>
+                <rect class="store" x="76" y="160" width="300" height="24" rx="12"/><text class="lbl mono" x="226" y="176">world_state.json</text>
+              </svg>
+            </div>
+            <p class="kicker">Five agents, one world state</p>
+            <h3><a href="https://github.com/ragzad/AI-Dungeon">AI-Dungeon</a></h3>
+            <p>A text adventure run by five Gemini agents sharing one world state. One enforces the rules, one builds new places and characters, one handles pacing, one narrates and one keeps the record straight, so the story doesn't forget what happened.</p>
+            <ul class="tags" aria-label="Built with"><li>Python</li><li>Gemini</li><li>Streamlit</li><li>Docker</li></ul>
+            <a class="link-arrow" href="https://github.com/ragzad/AI-Dungeon">View on GitHub</a>
+          </article>
+
+          <article class="card">
+            <div class="thumb" aria-hidden="true">
+              <svg viewBox="0 0 400 190" role="presentation" focusable="false">
+                <defs><marker id="ah2" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" class="ahead"/></marker></defs>
+                <g class="edges" marker-end="url(#ah2)">
+                  <path d="M41 64V76"/><path d="M86 92H100"/><path d="M178 92H192"/><path d="M270 92H284"/><path d="M352 106V118"/>
+                </g>
+                <g class="dash"><path d="M47 106V146M139 106V146M231 106V146M323 106V146"/></g>
+                <rect class="node ghost" x="8" y="34" width="66" height="30" rx="6"/><text class="lbl sm" x="41" y="53">Unit idea</text>
+                <rect class="node" x="8" y="78" width="78" height="28" rx="6"/><text class="lbl sm" x="47" y="96">Lore Master</text>
+                <rect class="node" x="100" y="78" width="78" height="28" rx="6"/><text class="lbl sm" x="139" y="96">Unit Designer</text>
+                <rect class="node" x="192" y="78" width="78" height="28" rx="6"/><text class="lbl sm" x="231" y="96">Stat Balancer</text>
+                <rect class="node key" x="284" y="78" width="78" height="28" rx="6"/><text class="lbl sm on" x="323" y="96">Mod Coder</text>
+                <rect class="node ghost" x="330" y="120" width="60" height="22" rx="6"/><text class="lbl mono sm" x="360" y="135">.dm file</text>
+                <rect class="store" x="8" y="148" width="316" height="26" rx="13"/><text class="lbl mono" x="166" y="165">BigQuery · modJobs</text>
+                <text class="cap" x="8" y="22">Vertex AI Pipelines, one step per agent</text>
+              </svg>
+            </div>
+            <p class="kicker">Agents as cloud pipeline steps</p>
+            <h3><a href="https://github.com/ragzad/gcp-langchain-swarm">gcp-langchain-swarm</a></h3>
+            <p>Four LangChain agents running as separate Vertex AI Pipelines steps, passing work along through a BigQuery table, to turn a one-line idea into a Dominions 6 mod file. Every step's output is saved and easy to inspect.</p>
+            <ul class="tags" aria-label="Built with"><li>Python</li><li>LangChain</li><li>Vertex AI</li><li>BigQuery</li></ul>
+            <a class="link-arrow" href="https://github.com/ragzad/gcp-langchain-swarm">View on GitHub</a>
+          </article>
+
+          <article class="card">
+            <div class="thumb" aria-hidden="true">
+              <svg viewBox="0 0 400 190" role="presentation" focusable="false">
+                <path class="track" d="M30 82H370"/>
+                <g class="steps">
+                  <circle cx="30" cy="82" r="13"/><circle cx="78.6" cy="82" r="13"/><circle cx="127.1" cy="82" r="13"/><circle cx="175.7" cy="82" r="13"/>
+                  <circle cx="224.3" cy="82" r="13"/><circle cx="272.9" cy="82" r="13"/><circle cx="321.4" cy="82" r="13"/><circle class="last" cx="370" cy="82" r="13"/>
+                </g>
+                <g class="stepn">
+                  <text x="30" y="86.5">1</text><text x="78.6" y="86.5">2</text><text x="127.1" y="86.5">3</text><text x="175.7" y="86.5">4</text>
+                  <text x="224.3" y="86.5">5</text><text x="272.9" y="86.5">6</text><text x="321.4" y="86.5">7</text><text x="370" y="86.5" class="on">8</text>
+                </g>
+                <g class="lbl sm">
+                  <text x="17" y="58" style="text-anchor:start">Design doc</text><text x="127.1" y="58">Commanders</text><text x="224.3" y="58">Heroes</text><text x="321.4" y="58">Weapons</text>
+                  <text x="78.6" y="116">Nation</text><text x="175.7" y="116">Troops</text><text x="272.9" y="116">Spells</text><text x="383" y="116" style="text-anchor:end">Validation</text>
+                </g>
+                <rect class="store" x="30" y="146" width="340" height="26" rx="13"/><text class="lbl mono" x="200" y="163">only the reference data each step needs</text>
+              </svg>
+            </div>
+            <p class="kicker">A step-by-step generation workshop</p>
+            <h3><a href="https://github.com/ragzad/Dom6ModGen">Dom6ModGen</a></h3>
+            <p>A Django app that walks Gemini through building a Dominions 6 nation mod one step at a time, giving each step only the reference data it needs. My full-stack project for my Level 5 course.</p>
+            <ul class="tags" aria-label="Built with"><li>Django</li><li>Python</li><li>Gemini</li></ul>
+            <a class="link-arrow" href="https://github.com/ragzad/Dom6ModGen">View on GitHub</a>
+          </article>
+
+          <article class="card">
+            <div class="thumb" aria-hidden="true">
+              <svg viewBox="0 0 400 190" role="presentation" focusable="false">
+                <defs><marker id="ah4" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" class="ahead"/></marker></defs>
+                <g class="edges" marker-end="url(#ah4)">
+                  <path d="M104 62H136"/><path d="M234 62H266"/><path d="M59 78V130H136"/><path d="M234 130H266"/>
+                </g>
+                <rect class="node" x="14" y="46" width="90" height="32" rx="6"/><text class="lbl" x="59" y="66">Account</text>
+                <rect class="node key" x="138" y="46" width="96" height="32" rx="6"/><text class="lbl on" x="186" y="66">Projects</text>
+                <rect class="node" x="268" y="46" width="118" height="32" rx="6"/><text class="lbl" x="327" y="66">Supplies</text>
+                <rect class="node" x="138" y="114" width="96" height="32" rx="6"/><text class="lbl" x="186" y="134">Stripe</text>
+                <rect class="node" x="268" y="114" width="118" height="32" rx="6"/><text class="lbl" x="327" y="134">Premium tier</text>
+                <text class="cap" x="14" y="28">Track projects and the supplies they need</text>
+                <text class="cap" x="138" y="172">A one-off payment unlocks premium</text>
+              </svg>
+            </div>
+            <p class="kicker">Full-stack Django coursework</p>
+            <h3><a href="https://github.com/ragzad/Hobbyist">Hobbyist</a></h3>
+            <p>A tracker for hobby projects and the supplies they need, with accounts and a one-off Stripe payment for a premium tier. Built for my Full Stack Frameworks with Django module.</p>
+            <ul class="tags" aria-label="Built with"><li>Django</li><li>Python</li><li>Stripe</li></ul>
+            <a class="link-arrow" href="https://github.com/ragzad/Hobbyist">View on GitHub</a>
+          </article>
         </div>
-      </article>
-
-      <div class="grid">
-        <article class="card">
-          <h3><a href="https://github.com/ragzad/AI-Dungeon">AI-Dungeon</a></h3>
-          <p>A text adventure run by five Gemini agents sharing one world state. One enforces the rules, one builds new places and characters, one handles pacing, one narrates and one keeps the record straight, so the story doesn't forget what happened.</p>
-          <ul class="tags" aria-label="Built with"><li>Python</li><li>Gemini</li><li>Streamlit</li><li>Docker</li></ul>
-          <a class="link-arrow" href="https://github.com/ragzad/AI-Dungeon">View on GitHub</a>
-        </article>
-        <article class="card">
-          <h3><a href="https://github.com/ragzad/gcp-langchain-swarm">gcp-langchain-swarm</a></h3>
-          <p>Four LangChain agents running as separate Vertex AI Pipelines steps, passing work along through a BigQuery table, to turn a one-line idea into a Dominions 6 mod file. Every step's output is saved and easy to inspect.</p>
-          <ul class="tags" aria-label="Built with"><li>Python</li><li>LangChain</li><li>Vertex AI</li><li>BigQuery</li></ul>
-          <a class="link-arrow" href="https://github.com/ragzad/gcp-langchain-swarm">View on GitHub</a>
-        </article>
-        <article class="card">
-          <h3><a href="https://github.com/ragzad/Dom6ModGen">Dom6ModGen</a></h3>
-          <p>A Django app that walks Gemini through building a Dominions 6 nation mod one step at a time, giving each step only the reference data it needs. My full-stack project for my Level 5 course.</p>
-          <ul class="tags" aria-label="Built with"><li>Django</li><li>Python</li><li>Gemini</li></ul>
-          <a class="link-arrow" href="https://github.com/ragzad/Dom6ModGen">View on GitHub</a>
-        </article>
-        <article class="card">
-          <h3><a href="https://github.com/ragzad/Hobbyist">Hobbyist</a></h3>
-          <p>A tracker for hobby projects and the supplies they need, with accounts and a one-off Stripe payment for a premium tier. Built for my Full Stack Frameworks with Django module.</p>
-          <ul class="tags" aria-label="Built with"><li>Django</li><li>Python</li><li>Stripe</li></ul>
-          <a class="link-arrow" href="https://github.com/ragzad/Hobbyist">View on GitHub</a>
-        </article>
       </div>
     </section>
 
-    <section class="wrap section two-col" id="skills" aria-labelledby="skills-title">
-      <div>
-        <h2 id="skills-title">Skills</h2>
-        <dl class="skills">
-          <div><dt>Automation &amp; data</dt><dd>BigQuery, ETL pipelines, Google Apps Script, VBA, Power BI, Excel</dd></div>
-          <div><dt>Software</dt><dd>Python, Django, FastAPI, React, JavaScript, API integration</dd></div>
-          <div><dt>Cloud &amp; AI</dt><dd>Google Cloud, Vertex AI, Gemini API, LangChain, retrieval-augmented generation</dd></div>
-          <div><dt>Working with people</dt><dd>Team leadership, multi-site performance, training, stakeholder partnering</dd></div>
-        </dl>
-      </div>
-      <div>
-        <h2 id="work-title">Where I've worked</h2>
-        <ol class="timeline" aria-labelledby="work-title">
-          <li><span class="role">Business Partner</span> <span class="org">Rentokil Initial</span> <span class="when">2024 to now</span></li>
-          <li><span class="role">Business Support Manager</span> <span class="org">Dudley Council</span> <span class="when">2023 to 2024</span></li>
-          <li><span class="role">Sales Manager</span> <span class="org">National Eco</span> <span class="when">2023</span></li>
-          <li><span class="role">Business Manager</span> <span class="org">Network IT</span> <span class="when">2022 to 2023</span></li>
-          <li><span class="role">1st / 2nd Line IT Technician</span> <span class="org">RM</span> <span class="when">2018 to 2021</span></li>
-        </ol>
-        <p class="edu">Level 5 Web App Development, University of Westminster (2025). Google Generative AI hackathon (2025).</p>
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="wrap">
+        <header class="sec-head">
+          <span class="sec-num" aria-hidden="true">03</span>
+          <h2 id="skills-title">Skills &amp; experience</h2>
+        </header>
+        <div class="two-col">
+          <div>
+            <h3 class="col-title">What I work with</h3>
+            <dl class="skills">
+              <div><dt>Automation &amp; data</dt><dd>BigQuery, ETL pipelines, Google Apps Script, VBA, Power BI, Excel</dd></div>
+              <div><dt>Software</dt><dd>Python, Django, FastAPI, React, JavaScript, API integration</dd></div>
+              <div><dt>Cloud &amp; AI</dt><dd>Google Cloud, Vertex AI, Gemini API, LangChain, retrieval-augmented generation</dd></div>
+              <div><dt>Working with people</dt><dd>Team leadership, multi-site performance, training, stakeholder partnering</dd></div>
+            </dl>
+          </div>
+          <div>
+            <h3 class="col-title" id="work-title">Where I've worked</h3>
+            <ol class="timeline" aria-labelledby="work-title">
+              <li><span class="when">2024 to now</span><span class="role">Business Partner</span><span class="org">Rentokil Initial</span></li>
+              <li><span class="when">2023 to 2024</span><span class="role">Business Support Manager</span><span class="org">Dudley Council</span></li>
+              <li><span class="when">2023</span><span class="role">Sales Manager</span><span class="org">National Eco</span></li>
+              <li><span class="when">2022 to 2023</span><span class="role">Business Manager</span><span class="org">Network IT</span></li>
+              <li><span class="when">2018 to 2021</span><span class="role">1st / 2nd Line IT Technician</span><span class="org">RM</span></li>
+            </ol>
+            <p class="edu"><span class="edu-label">Study</span> Level 5 Web App Development, University of Westminster (2025). Google Generative AI hackathon (2025).</p>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="contact" id="contact" aria-labelledby="contact-title">
-      <div class="wrap">
-        <h2 id="contact-title">Get in touch</h2>
-        <p>If you've got a process that's eating your team's time, or a role you think I'd fit, I'd like to hear about it.</p>
-        <p class="hero-links">
-          <a class="btn" href="mailto:Edavies9000@gmail.com">Edavies9000@gmail.com</a>
-          <a class="link-arrow on-dark" href="https://github.com/ragzad">github.com/ragzad</a>
-        </p>
+      <div class="wrap contact-grid">
+        <header class="sec-head on-band">
+          <span class="sec-num" aria-hidden="true">04</span>
+          <h2 id="contact-title">Get in touch</h2>
+        </header>
+        <div class="contact-body">
+          <p class="contact-lead">If you've got a process that's eating your team's time, or a role you think I'd fit, I'd like to hear about it.</p>
+          <p class="contact-mail"><a href="mailto:Edavies9000@gmail.com">Edavies9000@gmail.com</a></p>
+          <p class="hero-links">
+            <a class="btn btn-light" href="mailto:Edavies9000@gmail.com">Email me</a>
+            <a class="link-arrow on-dark" href="https://github.com/ragzad">github.com/ragzad</a>
+          </p>
+        </div>
       </div>
     </section>
   </main>
@@ -186,6 +333,7 @@
     <div class="wrap foot-inner">
       <p>Ethan Davies · Stourbridge, UK</p>
       <p><a href="pc-shop/">Old coursework: PC shop site</a></p>
+      <p class="colophon">Set in Fraunces and Manrope. Plain HTML and CSS.</p>
     </div>
   </footer>
 </body>
